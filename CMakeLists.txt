@@ -21,7 +21,8 @@ file(GLOB_RECURSE sources src/*.cpp src/*.c)
 
 add_executable(${PROJECT_NAME} ${sources}
         src/main.cpp
-        src/Game.h
-        src/Game.h)
+        src/game.h
+        src/shader.h
+)
 target_link_libraries(${PROJECT_NAME} PRIVATE glad glfw)
 set_property(TARGET ${PROJECT_NAME} PROPERTY C_STANDARD 99)
